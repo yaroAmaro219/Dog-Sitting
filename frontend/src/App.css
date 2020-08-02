@@ -28,10 +28,11 @@ html {
 
 .enroll-button2 {
   padding: 27px 72px;
-  background-color:  #3367FF;
+  background-color: #3367FF;
   font-size: x-large;
   color: white;
-  margin-top: 9px;
+  margin-top: 36px;
+  position: absolute;
 }
 
 .enroll-enroll {
@@ -40,7 +41,7 @@ html {
 }
 
 .footer {
-  background-color:  #3367FF;
+  background-color: #3367FF;
   padding: 36px 18px;
   width: 100%;
   color: white;
@@ -74,6 +75,15 @@ html {
     padding: 36px 18px !important;
   }
 
+  .contact {
+    padding: 36px 18px !important;
+  }
+
+  .bring {
+    padding: 36px 18px !important;
+    flex-wrap: wrap;
+  }
+
   .title-container {
     margin-bottom: 19px;
   }
@@ -83,11 +93,11 @@ html {
   }
 
   .home-img {
-    width: 510px!important;
+    width: 530px !important;
     height: 630px;
     /* width: 300px !important; */
     position: absolute;
-    /* padding-top: 66px; */
+    padding-top: 0;
   }
 
   .map {
@@ -131,11 +141,13 @@ html {
     margin-top: 18px;
     position: absolute;
   }
+
+  .talk {
+  width: 333px;
+  }
 }
 
-.blurb {
-  width: 66%;
-}
+
 
 .enroll-home {
   text-decoration: none;
@@ -179,10 +191,10 @@ html {
 .bring {
   display: flex;
   flex-direction: column;
-  padding: 36px 18px;
+  padding: 36px 270px;
   align-items: flex-start;
-  justify-content: flex-start;
-  width: 90%;
+  /* justify-content: center; */
+  
 }
 
 .phone {
@@ -235,6 +247,12 @@ p {
   /* padding-bottom: 3px; */
 }
 
+.enroll-button {
+  background-color: transparent !important;
+  margin-top: 18px;
+  position: absolute;
+}
+
 .title-container {
   display: flex;
   text-align: start;
@@ -247,6 +265,7 @@ p {
   font-size: 30px;
   /* line-height: .99em; */
   transform: scale(1, 1.1);
+  width: 400px;
 }
 
 .profile-img {
@@ -310,6 +329,7 @@ a {
   width: 100%;
 }
 
+
 .enroll {
   display: flex;
   flex-direction: column;
@@ -318,11 +338,16 @@ a {
   color: white;
   padding: 36px 270px;
   width: 100%;
+  height: 196px;
 }
 
 .contact {
   width: 100%;
   min-height: 28px;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 36px 270px;
 }
 
 .App-header {

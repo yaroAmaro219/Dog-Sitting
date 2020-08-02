@@ -20,8 +20,7 @@ export default class Home extends Component {
               <p class='sub-title'>A loving and friendly environment for pups</p>
               {/* <p class='sub-title'>Call 357-400-6623</p> */}
               <div class='enroll-button-container'>
-                <p class='enroll-button'><a class='enroll-home' href='/enrolls'>Get In Touch</a></p>
-                {/* <h2 class='enroll-sub'>Spots are still available!</h2> */}
+                <a class='enroll-enroll' href='/enrolls'><p class='enroll-button2'>Get In Touch</p></a>
             </div>
             </div>
           
@@ -60,17 +59,17 @@ export default class Home extends Component {
         <h3>Dog Dad</h3>
         </div>
         <div class="enroll" id='enroll'>
-          <h1>Ready to Enroll?</h1>
+          <h1>Ready to Get Started?</h1>
           <h1>-</h1>
-          <p class='enroll-button2'><a class='enroll-enroll' href='/enrolls'>Enroll</a></p>
+          <a class='enroll-enroll' href='/enrolls'><p class='enroll-button2'>Enroll</p></a>
         </div>
         <div class='bring' id='bring'>
           <h1>What to Know?</h1>
           <h1>-</h1>
-          <h3>We feed the pups twice a day.</h3>
-          <h3>We take them on a minimum of 2 walks</h3>
-          <h3>Dogs will have access to large backyard during the day</h3>
-          <h3>Sleeping will happen inside and we will provide a dog bed</h3>
+          <h3 class='talk'>We feed the pups twice a day.</h3>
+          <h3 class='talk'>We take them on a minimum of 2 walks</h3>
+          <h3 class='talk'>Dogs will have access to large backyard during the day</h3>
+          <h3 class='talk'>Sleeping will happen inside and we will provide a dog bed</h3>
         </div>
       </div>
     )
