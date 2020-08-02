@@ -6,13 +6,14 @@ export default class Nav extends Component {
       <>
       <div class="nav">
           <div class='nav-text'>
-        <a class='link' href='#enroll'>Enroll</a>
-        <a class='link' href='#dates'>Dates</a>
-        <a class='link' href='#location'>Location</a>
-        <a class='link' href='#pricing'>Pricing</a>
-        <a class='link' href='#coaches'>Meet the Coaches</a>
+        <a class='link' href='/enrolls'>Enroll</a>
+        <a class='link' href='/#dates'>Dates</a>
+        <a class='link' href='/#location'>Location</a>
+        <a class='link' href='/#pricing'>Pricing</a>
+        <a class='link' href='/#coaches'>Meet the Sitters</a>
             </div>
           <div class="hamburger">
+
         <input type="checkbox" id="nav-toggle"/>
           <label for="nav-toggle">
             <span class="toggle-words"><i class="fa fa-bars" id="bar"><svg viewBox="0 0 100 80" width="40" height="40">
@@ -25,15 +26,15 @@ export default class Nav extends Component {
             <ul>
               {/* <li><a href='#dates' class="nav-link"
                 onClick={() => document.getElementById("nav-toggle").checked = false}>Date</a></li> */}
-                <li><a href="#location" class="nav-link"
+                <li><a href="/#location" class="nav-link"
                   onClick={() => document.getElementById("nav-toggle").checked = false}>Location</a></li>
-                 <li><a href="#pricing" class="nav-link"
+                 <li><a href="/#pricing" class="nav-link"
                 onClick={() => document.getElementById("nav-toggle").checked = false}>Pricing</a></li>
-                <li><a href="#coaches" class="nav-link"
+                <li><a href="/#coaches" class="nav-link"
                 onClick={() => document.getElementById("nav-toggle").checked = false}>Meet the Sitters</a></li>
                 {/* <li><a href="#bring" class="nav-link"
                 onClick={() => document.getElementById("nav-toggle").checked = false}>More Info</a></li> */}
-                 <li><a href="#enroll" class="nav-link"
+                 <li><a href="/enrolls" class="nav-link"
                   onClick={() => document.getElementById("nav-toggle").checked = false}>Get Started</a></li>
                 <a class='social' href='https://www.instagram.com/dogsittingnyc/?hl=en' target="_blank" rel="noopener noreferrer" ><svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M24.4507 2.87656H10.0679C6.09616 2.87656 2.87646 6.09625 2.87646 10.068V24.4507C2.87646 28.4224 6.09616 31.6421 10.0679 31.6421H24.4507C28.4223 31.6421 31.642 28.4224 31.642 24.4507V10.068C31.642 6.09625 28.4223 2.87656 24.4507 2.87656Z" stroke="white" stroke-width="2.87656" stroke-linecap="round" stroke-linejoin="round"/>

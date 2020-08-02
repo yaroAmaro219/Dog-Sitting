@@ -20,7 +20,7 @@ export default class Home extends Component {
               <p class='sub-title'>A loving and friendly environment for pups</p>
               {/* <p class='sub-title'>Call 357-400-6623</p> */}
               <div class='enroll-button-container'>
-                <p class='enroll-button'><a class='enroll-home' href='#enroll'>Get In Touch</a></p>
+                <p class='enroll-button'><a class='enroll-home' href='/enrolls'>Get In Touch</a></p>
                 {/* <h2 class='enroll-sub'>Spots are still available!</h2> */}
             </div>
             </div>
@@ -45,8 +45,8 @@ export default class Home extends Component {
         <div class='pricing' id='pricing'>
           <h1>Pricing:</h1>
           <h1>-</h1>
-          <h2> $80/night per dog</h2>
           <h2> $350/week per dog</h2>
+          <h2> $80/night per dog</h2>
           <h2>Pick up and drop off included!</h2>
         </div>
         <div class='fifth' id='coaches'>
@@ -60,12 +60,9 @@ export default class Home extends Component {
         <h3>Dog Dad</h3>
         </div>
         <div class="enroll" id='enroll'>
-          <h1>Ready to Start?</h1>
+          <h1>Ready to Enroll?</h1>
           <h1>-</h1>
-          <h3>Call this number to enroll: </h3>
-          <h1><a class='phone' href='tel:3474006623'>347-400-6623</a></h1>
-          <h3>or email:</h3>
-          <h3><a class='phone' href="mailto:nycdogsitting@gmail.com">NYCdogsitting@gmail.com</a></h3>
+          <p class='enroll-button2'><a class='enroll-enroll' href='/enrolls'>Enroll</a></p>
         </div>
         <div class='bring' id='bring'>
           <h1>What to Know?</h1>

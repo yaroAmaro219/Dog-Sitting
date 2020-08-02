@@ -15,3 +15,171 @@ Migrating to CreateEnrolls (20200802132802)
   [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(3674827670294006625)[0m
   [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/enrolls" for ::1 at 2020-08-02 10:15:27 -0400
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EnrollsController#create as HTML
+  Parameters: {"enroll"=>{"firstname"=>"Marissa", "lastname"=>"Cole", "phone"=>"6465221004", "email"=>"yaroamari@gmail.com", "dogname"=>"Bear", "dogage"=>"1", "dogbreed"=>"Mut", "dogweight"=>"30lbs", "question"=>"Fired up", "consent"=>true, "startdate"=>"2020-08-02T14:13:43.952Z", "enddate"=>"2020-08-11T04:00:00.000Z", "needs"=>"Love", "vaccine"=>true, "pickup"=>"Whenever"}}
+[31mUnpermitted parameter: :question[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/enrolls_controller.rb:20:in `create'
+  [1m[36mEnroll Create (1.8ms)[0m  [1m[32mINSERT INTO "enrolls" ("firstname", "lastname", "phone", "email", "dogname", "dogage", "dogbreed", "dogweight", "startdate", "enddate", "consent", "needs", "vaccine", "pickup", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16) RETURNING "id"[0m  [["firstname", "Marissa"], ["lastname", "Cole"], ["phone", "6465221004"], ["email", "yaroamari@gmail.com"], ["dogname", "Bear"], ["dogage", "1"], ["dogbreed", "Mut"], ["dogweight", "30lbs"], ["startdate", "2020-08-02T14:13:43.952Z"], ["enddate", "2020-08-11T04:00:00.000Z"], ["consent", "t"], ["needs", "Love"], ["vaccine", "t"], ["pickup", "Whenever"], ["created_at", "2020-08-02 14:15:28.302543"], ["updated_at", "2020-08-02 14:15:28.302543"]]
+  ↳ app/controllers/enrolls_controller.rb:20:in `create'
+  [1m[35m (7.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/enrolls_controller.rb:20:in `create'
+Completed 201 Created in 56ms (Views: 15.5ms | ActiveRecord: 17.3ms | Allocations: 16264)
+
+
+Started GET "/enrolls" for ::1 at 2020-08-02 10:15:34 -0400
+Processing by EnrollsController#index as HTML
+  [1m[36mEnroll Load (0.7ms)[0m  [1m[34mSELECT "enrolls".* FROM "enrolls"[0m
+  ↳ app/controllers/enrolls_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.7ms | Allocations: 1242)
+
+
+Started GET "/enrolls" for ::1 at 2020-08-02 10:16:48 -0400
+Processing by EnrollsController#index as HTML
+  [1m[36mEnroll Load (0.5ms)[0m  [1m[34mSELECT "enrolls".* FROM "enrolls"[0m
+  ↳ app/controllers/enrolls_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.5ms | Allocations: 1200)
+
+
+Started GET "/enrolls" for ::1 at 2020-08-02 10:16:56 -0400
+Processing by EnrollsController#index as HTML
+  [1m[36mEnroll Load (2.6ms)[0m  [1m[34mSELECT "enrolls".* FROM "enrolls"[0m
+  ↳ app/controllers/enrolls_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 2.6ms | Allocations: 1200)
+
+
+Started GET "/enrolls" for ::1 at 2020-08-02 10:17:48 -0400
+Processing by EnrollsController#index as HTML
+  [1m[36mEnroll Load (0.5ms)[0m  [1m[34mSELECT "enrolls".* FROM "enrolls"[0m
+  ↳ app/controllers/enrolls_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.5ms | Allocations: 1200)
+
+
+Started GET "/enrolls" for ::1 at 2020-08-02 10:19:09 -0400
+Processing by EnrollsController#index as HTML
+  [1m[36mEnroll Load (0.5ms)[0m  [1m[34mSELECT "enrolls".* FROM "enrolls"[0m
+  ↳ app/controllers/enrolls_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.5ms | Allocations: 1182)
+
+
+Started GET "/enrolls" for ::1 at 2020-08-02 10:19:13 -0400
+Processing by EnrollsController#index as HTML
+  [1m[36mEnroll Load (0.7ms)[0m  [1m[34mSELECT "enrolls".* FROM "enrolls"[0m
+  ↳ app/controllers/enrolls_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.7ms | Allocations: 1181)
+
+
+Started GET "/enrolls" for ::1 at 2020-08-02 10:19:19 -0400
+Processing by EnrollsController#index as HTML
+  [1m[36mEnroll Load (0.3ms)[0m  [1m[34mSELECT "enrolls".* FROM "enrolls"[0m
+  ↳ app/controllers/enrolls_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1181)
+
+
+Started GET "/enrolls" for ::1 at 2020-08-02 10:19:21 -0400
+Processing by EnrollsController#index as HTML
+  [1m[36mEnroll Load (0.6ms)[0m  [1m[34mSELECT "enrolls".* FROM "enrolls"[0m
+  ↳ app/controllers/enrolls_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.6ms | Allocations: 1181)
+
+
+Started GET "/enrolls" for ::1 at 2020-08-02 10:19:27 -0400
+Processing by EnrollsController#index as HTML
+  [1m[36mEnroll Load (0.4ms)[0m  [1m[34mSELECT "enrolls".* FROM "enrolls"[0m
+  ↳ app/controllers/enrolls_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.4ms | Allocations: 1181)
+
+
+Started GET "/enrolls" for ::1 at 2020-08-02 10:19:28 -0400
+Processing by EnrollsController#index as HTML
+  [1m[36mEnroll Load (0.5ms)[0m  [1m[34mSELECT "enrolls".* FROM "enrolls"[0m
+  ↳ app/controllers/enrolls_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.5ms | Allocations: 1181)
+
+
+Started GET "/enrolls" for ::1 at 2020-08-02 10:20:28 -0400
+Processing by EnrollsController#index as HTML
+  [1m[36mEnroll Load (0.5ms)[0m  [1m[34mSELECT "enrolls".* FROM "enrolls"[0m
+  ↳ app/controllers/enrolls_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.5ms | Allocations: 1181)
+
+
+Started GET "/enrolls" for ::1 at 2020-08-02 10:20:29 -0400
+Processing by EnrollsController#index as HTML
+  [1m[36mEnroll Load (0.9ms)[0m  [1m[34mSELECT "enrolls".* FROM "enrolls"[0m
+  ↳ app/controllers/enrolls_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.9ms | Allocations: 1181)
+
+
+Started GET "/enrolls" for ::1 at 2020-08-02 10:20:35 -0400
+Processing by EnrollsController#index as HTML
+  [1m[36mEnroll Load (0.5ms)[0m  [1m[34mSELECT "enrolls".* FROM "enrolls"[0m
+  ↳ app/controllers/enrolls_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.5ms | Allocations: 1181)
+
+
+Started GET "/enrolls" for ::1 at 2020-08-02 10:20:49 -0400
+Processing by EnrollsController#index as HTML
+  [1m[36mEnroll Load (3.8ms)[0m  [1m[34mSELECT "enrolls".* FROM "enrolls"[0m
+  ↳ app/controllers/enrolls_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 1.7ms | ActiveRecord: 3.8ms | Allocations: 1181)
+
+
+Started GET "/enrolls" for ::1 at 2020-08-02 10:22:31 -0400
+Processing by EnrollsController#index as HTML
+  [1m[36mEnroll Load (0.4ms)[0m  [1m[34mSELECT "enrolls".* FROM "enrolls"[0m
+  ↳ app/controllers/enrolls_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms | Allocations: 1181)
+
+
+Started GET "/enrolls" for ::1 at 2020-08-02 10:22:51 -0400
+Processing by EnrollsController#index as HTML
+  [1m[36mEnroll Load (0.5ms)[0m  [1m[34mSELECT "enrolls".* FROM "enrolls"[0m
+  ↳ app/controllers/enrolls_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.5ms | Allocations: 1181)
+
+
+Started GET "/enrolls" for ::1 at 2020-08-02 10:22:53 -0400
+Processing by EnrollsController#index as HTML
+  [1m[36mEnroll Load (1.1ms)[0m  [1m[34mSELECT "enrolls".* FROM "enrolls"[0m
+  ↳ app/controllers/enrolls_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 1.1ms | Allocations: 1181)
+
+
+Started GET "/enrolls" for ::1 at 2020-08-02 10:22:55 -0400
+Processing by EnrollsController#index as HTML
+  [1m[36mEnroll Load (1.0ms)[0m  [1m[34mSELECT "enrolls".* FROM "enrolls"[0m
+  ↳ app/controllers/enrolls_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 1.0ms | Allocations: 1181)
+
+
+Started GET "/enrolls" for ::1 at 2020-08-02 10:23:00 -0400
+Processing by EnrollsController#index as HTML
+  [1m[36mEnroll Load (0.4ms)[0m  [1m[34mSELECT "enrolls".* FROM "enrolls"[0m
+  ↳ app/controllers/enrolls_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.4ms | Allocations: 1181)
+
+
+Started GET "/enrolls" for ::1 at 2020-08-02 10:23:02 -0400
+Processing by EnrollsController#index as HTML
+  [1m[36mEnroll Load (0.3ms)[0m  [1m[34mSELECT "enrolls".* FROM "enrolls"[0m
+  ↳ app/controllers/enrolls_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms | Allocations: 1181)
+
+
+Started GET "/enrolls" for ::1 at 2020-08-02 10:23:03 -0400
+Processing by EnrollsController#index as HTML
+  [1m[36mEnroll Load (0.8ms)[0m  [1m[34mSELECT "enrolls".* FROM "enrolls"[0m
+  ↳ app/controllers/enrolls_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.8ms | Allocations: 1181)
+
+
+Started GET "/enrolls" for ::1 at 2020-08-02 10:23:04 -0400
+Processing by EnrollsController#index as HTML
+  [1m[36mEnroll Load (0.5ms)[0m  [1m[34mSELECT "enrolls".* FROM "enrolls"[0m
+  ↳ app/controllers/enrolls_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.5ms | Allocations: 1181)
+
+
